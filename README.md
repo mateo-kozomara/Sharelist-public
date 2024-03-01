@@ -1,4 +1,4 @@
-# Sharelist - iOS and Android app
+# Sharelist - React Native / Typescript iOS and Android app
 
 ## Features
 - TODO app using Firebase with realtime data updates via Realtime database.
