@@ -1,0 +1,7 @@
+android/app/build
+ios/Pods
+node_modules/
+vendor/
+ios/build
+android/.gradle
+ios/Sharelist.xcworkspace/xcuserdata

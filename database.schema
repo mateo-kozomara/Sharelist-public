@@ -1,0 +1,43 @@
+userLists
+  <listId>
+    name: string
+    owner: string
+    createdAt: number
+    description?: string
+    icon?: string
+    tasks
+      <taskId>
+        name: string
+        createdAt: number
+        owner: string
+        completed: boolean
+        icon?: string
+        description?: string
+    users
+      <userId>:true
+
+friendships
+  <friendshipId>
+    areFriends: boolean
+    inviter?: <userId>
+    pendingViewAccepted?: string
+    users
+      <userId>:true
+
+
+listInvites
+  <inviteId>
+    pendingViewAccepted?: string
+    inviter?: <userId>
+    listId: string
+    users
+      <userId>:true
+
+activityLog
+  <activityLogId>
+    listId: string - what list was the action made on
+    action: string - what action was made
+    subject: string - what was the subject of action
+    actionData: string - additional data for the action
+    user: string - what user made the action
+    timestamp: number - when it happened
